@@ -1,3 +1,16 @@
+:root {
+	--fondo-oscuro: #232533;
+	--fondo-claro: #F5F7FB;
+
+	--color-primario: #505EF4;
+	--color-primario-oscuro: #3041F8;
+	--color-secundario: #B1B2C9;
+	--color-secundario-oscuro: #888AB7;
+	--color-blanco: #ffffff;
+
+	--fuente-primaria: 'Lato', sans-serif;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -6,9 +19,9 @@
 
 
 body {
-	background: #F5F7FB;
-	font-family: 'Lato', sans-serif;
-	color: #FFFFFF;
+	background: var(--fondo-claro);
+	font-family: var(--fuente-primaria);
+	color: var(--color-blanco);
 }
 
 a {
@@ -25,14 +38,14 @@ a {
 
 header {
 	min-height: 40vh;
-	background: #232533;
+	background: var(--fondo-oscuro);
 	display: flex;
 	align-items: center;
 	text-align: center;
 }
 
 header .logotipo {
-	color: #B1B2C9;
+	color: var(--color-secundario);
 	font-size: 24px;
 	margin-bottom: 40px;
 }
@@ -52,23 +65,23 @@ header .btn {
 	display: inline-block;
 	padding: 15px 20px;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: var(--color-blanco);
 	border-radius: 5px;
 	transition: .3s ease all;
 }
 
 header .btn.primario {
-	background: #505EF4;
+	background: var(--color-primario);
 }
 header .btn.primario:hover {
-	background: #3041F8;
+	background: var(--color-primario-oscuro);
 }
 
 header .btn.secundario {
-	background: #B1B2C9;
+	background: var(--color-secundario);
 }
 header .btn.secundario:hover {
-	background: #888AB7;
+	background: var(--color-secundario-oscuro);
 }
 
 /* * ----- ----- ----- MAIN ----- ----- ----- */
@@ -80,8 +93,8 @@ main .contenedor {
 }
 
 main .card {
-	background: #FFFFFF;
-	color: #232533;
+	background: var(--color-blanco);
+	color: var(--fondo-oscuro);
 	padding: 20px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 50px rgba(0,0,0,.1)
@@ -107,21 +120,21 @@ main .card .btn {
 	display: inline-block;
 	padding: 10px 20px;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: var(--color-blanco);
 	border-radius: 5px;
 	transition: .3s ease all;
 }
 
 main .card .btn.primario {
-	background: #505EF4;
+	background: var(--color-primario);
 }
 main .card .btn.primario:hover {
-	background: #3041F8;
+	background: var(--color-primario-oscuro);
 }
 
 main .card .btn.secundario {
-	background: #B1B2C9;
+	background: var(--color-secundario);
 }
 main .card .btn.secundario:hover {
-	background: #888AB7;
+	background: var(--color-secundario-oscuro);
 }
